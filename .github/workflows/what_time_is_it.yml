@@ -1,0 +1,14 @@
+name: What Time Is It Workflow
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  show_time:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Current Time
+        run: date
